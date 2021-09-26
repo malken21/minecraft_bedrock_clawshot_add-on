@@ -1,0 +1,17 @@
+{
+    "format_version": "1.17.11",
+    "minecraft:item": {
+        "description": {
+            "identifier": "marumasa:clawshot",
+            "category": "equipment"
+        },
+        "events": {"shot:use":{"swing": {},"run_command": {"command": ["tag @s add clawshot0","playsound item.trident.throw @s"]},"shoot": {"projectile": "marumasa:clawshot","launch_power": 1}}},
+        "components": {
+            "minecraft:icon": {"texture": "lodestonecompass_item"},
+            "minecraft:max_stack_size": 1,
+            "minecraft:cooldown": {"duration": 1.5,"category": "clawshot"},
+            "minecraft:on_use": {"on_use": {"event": "shot:use"}},
+            "minecraft:display_name": {"value":"\u00A7\u0067\u30AF\u30ED\u30FC\u30B7\u30E7\u30C3\u30C8\u00A7\u0072"}
+        }
+    }
+}

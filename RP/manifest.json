@@ -1,0 +1,18 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "§gクローショット追加アドオン",
+    "description": "Ver.1.17.1",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 13, 0],
+    "uuid": "7ff68f19-20a4-4858-a356-826fb59cf568"
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "description": "RE",
+      "version": [1, 0, 0],
+      "uuid": "9f5752fb-76aa-45ab-8784-135920cefae7"
+    }
+  ]
+}

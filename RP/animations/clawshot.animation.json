@@ -1,0 +1,39 @@
+{
+	"format_version" : "1.8.0",
+	"animations" : {
+
+		"animation.clawshot.riding" : {
+			"loop" : true,
+			"bones" : {
+				"leftleg" : {
+					"rotation" : [ "-this", "-this", "-this" ]
+				},
+				"rightleg" : {
+					"rotation" : [ "-this", "-this", "-this" ]
+				},
+				"leftarm" : {
+					"rotation" : [ "-this", "-this", "-this" ]
+				},
+				"rightarm" : {
+					"rotation" : [ "-this", "-this", "-this" ]
+				}
+			}
+		},
+
+		"animation.clawshot.move" : {
+			"loop" : true,
+            "animation_length": 0.000001,
+			"particle_effects": {
+				"0.0": {
+					"effect": "clawshot",
+					"locator": "clawshot"
+				}
+			},
+      "bones": {
+        "body": {
+              "rotation" : [ "-query.target_x_rotation", "-query.target_y_rotation", 0.0 ]
+        }
+      }
+		}
+	}
+}

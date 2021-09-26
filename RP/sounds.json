@@ -1,0 +1,28 @@
+{
+    "entity_sounds": {
+        "entities": {
+            "marumasa:shot": {
+                "events": {
+                    "ambient": "dig.chain",
+                    "death": "dig.chain",
+                    "hurt": "dig.chain",
+                    "step": {
+                        "pitch": 1,
+                        "sound": "dig.chain",
+                        "volume": 1
+                    },
+                    "throw": {
+                        "pitch": 1,
+                        "sound": "dig.chain",
+                        "volume": 1
+                    }
+                },
+                "pitch": [
+                    0.8,
+                    1.2
+                ],
+                "volume": 1
+            }
+        }
+    }
+}

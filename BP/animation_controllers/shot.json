@@ -1,0 +1,18 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.shot" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{"shot" : "!query.has_rider" }
+					]
+				},
+				"shot" : {
+                                "on_entry" : ["/function clawshot_despawn"]
+				}
+			}
+		}
+	}
+}

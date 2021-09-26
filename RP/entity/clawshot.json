@@ -1,0 +1,27 @@
+{
+  "format_version": "1.17.11",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "marumasa:clawshot",
+      "materials": { "default": "clawshot" },
+      "textures": {
+        "default": "textures/entity/clawshot"
+      },
+      "geometry": {
+        "default": "geometry.clawshot"
+      },
+      "particle_effects": {
+        "clawshot": "marumasa:clawshot"
+      },
+      "animations": {
+        "move": "animation.clawshot.move"
+      },
+      "scripts": {
+        "animate": [
+          "move"
+        ]
+      },
+      "render_controllers": [ "controller.render.clawshot" ]
+    }
+  }
+}

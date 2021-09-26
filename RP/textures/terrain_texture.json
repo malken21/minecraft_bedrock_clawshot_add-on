@@ -1,0 +1,12 @@
+{
+   "num_mip_levels" : 4,
+   "padding" : 8,
+   "resource_pack_name" : "marumasa",
+   "texture_data" : {
+
+
+  "fuse_block": {"textures": "textures/blocks/fuse_block"}
+
+   },
+   "texture_name" : "atlas.terrain"
+}

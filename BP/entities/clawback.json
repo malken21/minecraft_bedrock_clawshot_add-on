@@ -1,0 +1,66 @@
+{
+  "format_version": "1.17.11",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "marumasa:clawback",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+		"component_groups": {
+			"chain:despawn": {
+                        "minecraft:instant_despawn": {}
+			}
+		},
+
+"events": {"clawback:loop": {"run_command": {"command": ["tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","tp @s ^^^0.1 facing @a[tag=clawshot2,c=1]","execute @p[tag=clawshot2,r=0.1] ~~~ event entity @e[type=marumasa:clawback,c=1] chain:despawn"]}},"chain:despawn": {"add": {"component_groups": ["chain:despawn"]}}},
+
+    "components": {
+
+            "minecraft:timer": {
+                "time": [
+                    0,
+                    0
+                ],
+                "time_down_event": {
+                    "event": "clawback:loop",
+                    "target": "self"
+                }
+            },
+            "minecraft:rideable": {
+                "seat_count": 1,
+                "family_types": [
+                    "mob"
+                ],
+                "seats": {
+                    "position": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            "minecraft:health": {
+                "value": 1,
+                "max": 1
+            },
+      "minecraft:breathable": {
+        "total_supply": 0,
+        "suffocate_time": 0,
+        "breathes_water": true
+      },
+      "minecraft:fire_immune": {
+      },
+      "minecraft:collision_box": {
+        "width": 0.25,
+        "height": 0.25
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      }
+    }
+  }
+}

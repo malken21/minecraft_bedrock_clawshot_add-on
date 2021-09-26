@@ -1,0 +1,91 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "marumasa:shot",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "scripts": {
+                "animate": [
+                    "shot"
+                ]
+            },
+            "animations": {
+                "shot": "controller.animation.shot"
+            }
+        },
+        "component_groups": {
+            "shot:despawn": {
+                "minecraft:instant_despawn": {}
+            }
+        },
+        "events": {
+            "shot:despawn": {
+                "add": {
+                    "component_groups": [
+                        "shot:despawn"
+                    ]
+                }
+            },
+            "chain:shot": {
+                "run_command": {
+                    "command": [
+                        "function clawshot"
+                    ]
+                }
+            }
+        },
+        "components": {
+            "minecraft:fire_immune": {},
+            "minecraft:type_family": {
+                "family": [
+                    "clawshot_shot"
+                ]
+            },
+            "minecraft:timer": {
+                "time": [
+                    0,
+                    0
+                ],
+                "time_down_event": {
+                    "event": "chain:shot",
+                    "target": "self"
+                }
+            },
+            "minecraft:rideable": {
+                "seat_count": 1,
+                "family_types": [
+                    "player"
+                ],
+                "seats": {
+                    "position": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            "minecraft:health": {
+                "value": 1,
+                "max": 1
+            },
+      "minecraft:breathable": {
+        "total_supply": 0,
+        "suffocate_time": 0,
+        "breathes_water": true
+      },
+            "minecraft:collision_box": {
+                "width": 0.25,
+                "height": 0.25
+            },
+            "minecraft:physics": {
+                "has_gravity": false
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            }
+        }
+    }
+}

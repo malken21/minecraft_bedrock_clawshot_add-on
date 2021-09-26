@@ -1,0 +1,40 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "marumasaSDGs:CO2killer"
+    },
+    "event": {
+            "CO2killer": {
+                "run_command": {
+                    "command": [
+                        "summon tnt"
+                    ]
+                }
+            }
+    },
+    "components": {
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "tokatest_top",
+          "render_method": "opaque"
+        },
+        "north": {
+          "texture": "tokatest_side",
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:loot": "",
+      "minecraft:unwalkable": true,
+      "minecraft:destroy_time": 1,
+      "minecraft:explosion_resistance": 1,
+      "minecraft:ticking": {
+        "on_tick": {
+          "event": "CO2killer"
+        },
+        "range": [ 0, 0 ],
+        "looping": true
+      }
+    }
+  }
+}
